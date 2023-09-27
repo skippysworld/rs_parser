@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+
+:root {
+	--color-background: #fafafa;
+	--color-border: #36802d;
+	--color-shadow: #77ab59;
+	--color-hover: #c9df8a;
+	--text-light: 100;
+	--text-regular: 400;
+	--text-bold: 700;
+}
+
+html {
+	font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--color-background);
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+section.formSection {
+	padding-inline: auto;
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+}
+
+header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+textarea {
+	resize: none;
+	padding: 2rem;
+	width: 25rem;
+	height: 12rem;
+	border: 2px solid var(--color-border);
+	border-radius: 10px;
+	box-shadow: 0 0 10px var(--color-shadow);
+}
+
+textarea:focus {
+	outline: none;
+}
+
+textarea::-webkit-scrollbar {
+	display: none;
+}
+
+table {
+	width: 100%;
+}
+
+table,
+tr,
+td {
+	padding: 0.5rem;
+	border-collapse: collapse;
+	border: 1px solid #e6e6e6;
+	border-radius: 10px;
+}
+
+input[type="submit"] {
+	margin-top: 2rem;
+	padding: 1rem 2rem;
+	background-color: var(--color-background);
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--color-border);
+	color: var(--color-background);
+	border-color: var(--color-border);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RS Parser</title>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>RS Parser</h1>
+			<aside>
+				<p>PRA / ESS</p>
+				<p>v 0.1</p>
+			</aside>
+		</header>
+		<main>
+			<section class="formSection">
+				<form action="" id="inputForm">
+					<label for="inputData" hidden>Brochure codification</label>
+					<textarea
+						name="inputData"
+						id="inputData"
+						placeholder="Brochure codification.&#10;&#10;Input lines may contain spaces."
+					></textarea>
+					<input type="submit" value="Oh, yes! Parse that!" />
+				</form>
+			</section>
+			<section class="resultSection">
+				<table>
+					<tbody class="resultTable"></tbody>
+				</table>
+			</section>
+		</main>
+		<footer></footer>
+	</body>
+	<script src="dataRS.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</html>
